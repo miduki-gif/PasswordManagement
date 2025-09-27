@@ -8,8 +8,8 @@ case $choice in
 	"Add Password") 
 		read -p "サービス名を入力してください：" SystemName        
 		read -p "ユーザー名を入力してください：" UserName
-                read -sp "パスワードを入力してください：" Password
-                echo $SystemName:$UserName:$Password >> passwordManeged.txt
+        read -sp "パスワードを入力してください：" Password
+        echo $SystemName:$UserName:$Password >> passwordManeged.txt
 		echo "パスワードの追加は成功しました。";;
 
         "Get Password") 
